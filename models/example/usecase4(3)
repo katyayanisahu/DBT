@@ -1,0 +1,2 @@
+select SOURCE,Count(SOURCE) from "VWE_S3"."PUBLIC"."SENTIMENT_ANALYSIS" 
+Group by SOURCE;

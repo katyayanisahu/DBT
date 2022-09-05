@@ -1,0 +1,38 @@
+update &quot;TRANSFORMATION&quot;.&quot;PUBLIC&quot;.&quot;Transform_join_REVIEWS&quot;
+set REMARKS=&#39; Smell is good&#39;
+where STATUS=&#39;Happy&#39; and RATING=1;
+
+update &quot;TRANSFORMATION&quot;.&quot;PUBLIC&quot;.&quot;Transform_join_REVIEWS&quot;
+set REMARKS=&#39;Taste is good&#39;
+where STATUS=&#39;Happy&#39; and RATING=2;
+
+update &quot;TRANSFORMATION&quot;.&quot;PUBLIC&quot;.&quot;Transform_join_REVIEWS&quot;
+set REMARKS=&#39; Safe On Time delivery&#39;
+where STATUS=&#39;Happy&#39; and RATING=3;
+
+update &quot;TRANSFORMATION&quot;.&quot;PUBLIC&quot;.&quot;Transform_join_REVIEWS&quot;
+set REMARKS=&#39;Product quality is good&#39;
+where STATUS=&#39;Happy&#39; and RATING=4;
+
+update &quot;TRANSFORMATION&quot;.&quot;PUBLIC&quot;.&quot;Transform_join_REVIEWS&quot;
+set REMARKS=&#39;taste is very good&#39;
+where STATUS=&#39;Happy&#39; and RATING=5;
+
+update &quot;TRANSFORMATION&quot;.&quot;PUBLIC&quot;.&quot;Transform_join_REVIEWS&quot;
+set REMARKS=&#39;Poor quality,bad packaging &#39;
+where STATUS=&#39;Unhappy&#39; and RATING=1;
+update&quot;TRANSFORMATION&quot;.&quot;PUBLIC&quot;.&quot;Transform_join_REVIEWS&quot;
+set REMARKS=&#39;Received damaged product&#39;
+where STATUS=&#39;Unhappy&#39; and RATING=2;
+
+update &quot;TRANSFORMATION&quot;.&quot;PUBLIC&quot;.&quot;Transform_join_REVIEWS&quot;
+set REMARKS=&#39;Same product not received&#39;
+where STATUS=&#39;Unhappy&#39; and RATING=3;
+
+update &quot;TRANSFORMATION&quot;.&quot;PUBLIC&quot;.&quot;Transform_join_REVIEWS&quot;
+set REMARKS=&#39;Bad packaging&#39;
+where STATUS=&#39;Unhappy&#39; and RATING=4;
+
+update &quot;TRANSFORMATION&quot;.&quot;PUBLIC&quot;.&quot;Transform_join_REVIEWS&quot;
+set REMARKS=&#39;Late delivery&#39;
+where STATUS=&#39;Unhappy&#39; and RATING=5;

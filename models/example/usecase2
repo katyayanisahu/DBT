@@ -1,8 +1,8 @@
 
--- select * from VWE_DATABASE.PUBLIC.REVIEW_NEW where REVIEW_NEW.STATUS = 'Happy'
+-- select * from VWE_S3.PUBLIC.REVIEW_NEW where REVIEW_NEW.STATUS = 'Happy'
 
--- select * from VWE_DATABASE.PUBLIC.REVIEW_NEW where STATUS = 'Unhappy'
+-- select * from VWE_S3.PUBLIC.REVIEW_NEW where STATUS = 'Unhappy'
 
--- select * from VWE_DATABASE.PUBLIC.REVIEW_NEW where RATING = 5 
--- select * from VWE_DATABASE.PUBLIC.REVIEW_NEW where RATING = 4 
+-- select * from VWE_S3.PUBLIC.REVIEW_NEW where RATING = 5 
+-- select * from VWE_S3.PUBLIC.REVIEW_NEW where RATING = 4 
 select * from VWE_S3.PUBLIC.REVIEW_NEW where RATING = 3

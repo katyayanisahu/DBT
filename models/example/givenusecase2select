@@ -1,2 +1,0 @@
-select * from "VWE_S3"."X_POSTGRES_RDS_RAJSHRI"."CONVERTED_USERS1" 
-where SUBSCRIPTION='Yes';

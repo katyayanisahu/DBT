@@ -1,38 +1,45 @@
-update &quot;TRANSFORMATION&quot;.&quot;PUBLIC&quot;.&quot;Transform_join_REVIEWS&quot;
-set REMARKS=&#39; Smell is good&#39;
-where STATUS=&#39;Happy&#39; and RATING=1;
+CREATE OR REPLACE TABLE "TRANSFORMATION"."PUBLIC"."Transform_join_REVIEWS" AS
+SELECT A.CUSTOMER_ID,A.CUSTOMER_NAME,A.STATUS,A.RATING,A.REMARKS_BY_UNHAPPY_CUSTOMERS AS REMARKS FROM  
+"VWE_DATABASE"."X_POSTGRES_RDS_RAJSHRI"."REVIEW_NEW" as A
+INNER JOIN "VWE_DATABASE"."X_POSTGRES_RDS_RAJSHRI"."REVIEWS" as B ON A.CUSTOMER_ID = B.CUSTOMER_ID;
 
-update &quot;TRANSFORMATION&quot;.&quot;PUBLIC&quot;.&quot;Transform_join_REVIEWS&quot;
-set REMARKS=&#39;Taste is good&#39;
-where STATUS=&#39;Happy&#39; and RATING=2;
+update "TRANSFORMATION"."PUBLIC"."Transform_join_REVIEWS"
+set REMARKS=' Smell is good'  
+where STATUS='Happy' and RATING=1;
 
-update &quot;TRANSFORMATION&quot;.&quot;PUBLIC&quot;.&quot;Transform_join_REVIEWS&quot;
-set REMARKS=&#39; Safe On Time delivery&#39;
-where STATUS=&#39;Happy&#39; and RATING=3;
+update "TRANSFORMATION"."PUBLIC"."Transform_join_REVIEWS"
+set REMARKS='Taste is good' 
+where STATUS='Happy' and RATING=2;
 
-update &quot;TRANSFORMATION&quot;.&quot;PUBLIC&quot;.&quot;Transform_join_REVIEWS&quot;
-set REMARKS=&#39;Product quality is good&#39;
-where STATUS=&#39;Happy&#39; and RATING=4;
+update "TRANSFORMATION"."PUBLIC"."Transform_join_REVIEWS"
+set REMARKS=' Safe On Time delivery' 
+where STATUS='Happy' and RATING=3;
 
-update &quot;TRANSFORMATION&quot;.&quot;PUBLIC&quot;.&quot;Transform_join_REVIEWS&quot;
-set REMARKS=&#39;taste is very good&#39;
-where STATUS=&#39;Happy&#39; and RATING=5;
+update "TRANSFORMATION"."PUBLIC"."Transform_join_REVIEWS"
+set REMARKS='Product quality is good' 
+where STATUS='Happy' and RATING=4;
 
-update &quot;TRANSFORMATION&quot;.&quot;PUBLIC&quot;.&quot;Transform_join_REVIEWS&quot;
-set REMARKS=&#39;Poor quality,bad packaging &#39;
-where STATUS=&#39;Unhappy&#39; and RATING=1;
-update&quot;TRANSFORMATION&quot;.&quot;PUBLIC&quot;.&quot;Transform_join_REVIEWS&quot;
-set REMARKS=&#39;Received damaged product&#39;
-where STATUS=&#39;Unhappy&#39; and RATING=2;
+update "TRANSFORMATION"."PUBLIC"."Transform_join_REVIEWS"
+set REMARKS='taste is very good' 
+where STATUS='Happy' and RATING=5;
 
-update &quot;TRANSFORMATION&quot;.&quot;PUBLIC&quot;.&quot;Transform_join_REVIEWS&quot;
-set REMARKS=&#39;Same product not received&#39;
-where STATUS=&#39;Unhappy&#39; and RATING=3;
 
-update &quot;TRANSFORMATION&quot;.&quot;PUBLIC&quot;.&quot;Transform_join_REVIEWS&quot;
-set REMARKS=&#39;Bad packaging&#39;
-where STATUS=&#39;Unhappy&#39; and RATING=4;
+update "TRANSFORMATION"."PUBLIC"."Transform_join_REVIEWS"
+set REMARKS='Poor quality,bad packaging ' 
+where STATUS='Unhappy' and RATING=1;
 
-update &quot;TRANSFORMATION&quot;.&quot;PUBLIC&quot;.&quot;Transform_join_REVIEWS&quot;
-set REMARKS=&#39;Late delivery&#39;
-where STATUS=&#39;Unhappy&#39; and RATING=5;
+update"TRANSFORMATION"."PUBLIC"."Transform_join_REVIEWS"
+set REMARKS='Received damaged product' 
+where STATUS='Unhappy' and RATING=2;
+
+update "TRANSFORMATION"."PUBLIC"."Transform_join_REVIEWS"
+set REMARKS='Same product not received' 
+where STATUS='Unhappy' and RATING=3;
+
+update "TRANSFORMATION"."PUBLIC"."Transform_join_REVIEWS"
+set REMARKS='Bad packaging' 
+where STATUS='Unhappy' and RATING=4;
+
+update "TRANSFORMATION"."PUBLIC"."Transform_join_REVIEWS"
+set REMARKS='Late delivery' 
+where STATUS='Unhappy' and RATING=5;

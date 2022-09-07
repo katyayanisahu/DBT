@@ -1,2 +1,2 @@
-select CHANNEL,Count(CLICKS),Count(IMPRESSIONS) from  "VWE_S3"."PUBLIC"."MULTI_ATTRIBUTE"
-Group by CHANNEL
+select CHANNEL,Count(CLICKS) as TotalClicks,Count(IMPRESSIONS) as TotalCount from  "VWE_S3"."PUBLIC"."MULTI_ATTRIBUTE"
+Group by(CHANNEL)

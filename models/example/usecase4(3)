@@ -1,2 +1,0 @@
-select SOURCE,Count(SOURCE) from "VWE_S3"."PUBLIC"."SENTIMENTAL_FINAL" 
-Group by SOURCE;

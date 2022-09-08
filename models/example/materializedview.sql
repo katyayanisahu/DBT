@@ -1,4 +1,4 @@
-{{config(materialized='table')}}
+{{config(materialized='table',schema='katyayani')}}
 
 select
       ORDER_DATE as date_day,

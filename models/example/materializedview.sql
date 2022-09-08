@@ -8,4 +8,3 @@ select
  from  VWE_S3.PUBLIC.REVIEW_NEW
 group by 1
 
---select * from VWE_S3.PUBLIC.REVIEW_NEW

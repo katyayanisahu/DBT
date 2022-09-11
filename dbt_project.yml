@@ -32,8 +32,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 
-#on-run-start: insert into "VWE_S3"."PUBLIC"."Hooks" (hook_type) values ('run_start');commit;
-#on-run-end: insert into "VWE_S3"."PUBLIC"."Hooks" (hook_type) values ('run_end');commit;
+on-run-start: insert into VWE_S3.PUBLIC.Hooks(hook_type) values('run_start');commit;
+on-run-end: insert into VWE_S3.PUBLIC.Hooks(hook_type) values('run_end');commit;
 
 models:
   pre-hook: create or replace table VWE_S3.PUBLIC.Custom(Id varchar ,Order_Date date, Name varchar,status varchar);commit;

@@ -1,4 +1,4 @@
-{{config(materialized='table',schema='kirti')}}
+{{config(materialized='view')}}
 
 select
       ORDER_DATE as date_day,
@@ -7,4 +7,3 @@ select
 
  from  VWE_S3.PUBLIC.REVIEW_NEW
 group by 1
-

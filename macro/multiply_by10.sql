@@ -1,0 +1,3 @@
+{% macro multiply_by10(RATING) %}
+    ({{ RATING }} *10)
+{% endmacro %}

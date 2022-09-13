@@ -10,5 +10,3 @@ from  "VWE_S3"."PUBLIC"."CUSTOMER"
   -- this filter will only be applied on an incremental run
   where   ORDERDATE >= (select max( ORDERDATE ) from {{ this }})
 {% endif %}
-
-GROUP BY 3

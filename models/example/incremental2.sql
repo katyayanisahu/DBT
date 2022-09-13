@@ -1,10 +1,4 @@
-{{
-
-    config(
-
-        materialized='incremental')
-
-}}
+{{config(materialized='incremental',unique_key ='date_day')}}
 select
 
      ORDER_DATE as date_day,

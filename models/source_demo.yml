@@ -1,0 +1,18 @@
+version: 2
+sources:
+  - name: PUBLIC
+    database: VWE_S3
+    tables:
+      - name: CUSTOMER
+      - name: ORDER_NEW
+      - name: ORDER_SNAP
+      - name: REVENUE_SNAP  
+  
+
+
+
+
+    
+
+
+        

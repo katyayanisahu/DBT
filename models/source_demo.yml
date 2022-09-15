@@ -1,11 +1,18 @@
 version: 2
-
 sources:
-  - name: jaffle_shop
+  - name: PUBLIC
+    database: VWE_S3
     tables:
+      - name: CUSTOMER
       - name: ORDER_NEW
-      - name: ORDER_TABLE
+      - name: ORDER_SNAP
+      - name: REVENUE_SNAP  
+  
 
-  - name: stripe
-    tables:
-      - name: PREMIUM_CUSTOMER
+
+
+
+    
+
+
+        

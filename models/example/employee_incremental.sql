@@ -2,6 +2,7 @@
 
 select
       emp_id,
+      emp_name,
       date_trunc('day', order_date) as date_day,
       salary
  

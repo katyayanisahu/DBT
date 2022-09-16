@@ -4,7 +4,7 @@ exposures:
   - name: my_first_exposure
     type: dashboard
     maturity: high
-    url: https://bi.tool/dashboards/1
+    url: https://google.com
     description: >
       Did someone say "exponential growth"?
     

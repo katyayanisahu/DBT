@@ -1,1 +1,0 @@
-select Count(*) from "VWE_S3"."PUBLIC"."SENTIMENTAL_FINAL"  where SOURCE='Facebook';

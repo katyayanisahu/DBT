@@ -1,0 +1,23 @@
+# models/marts/product/schema.yml
+
+version: 2
+
+models:
+ - name: dim_customers
+   ...
+
+metrics:
+  - name: new_customers
+    label: New Customers
+    model: ref('CUSTOMER')
+    description: "The number of paid customers using the product"
+
+    type: count
+    sql: CID # superfluous here, but shown as an example
+
+    timestamp: ORDERDATE
+    time_grains: [day, week, month]
+
+    dimensions:
+      - CUSTOMER_NAME
+    

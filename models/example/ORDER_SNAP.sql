@@ -1,0 +1,1 @@
+select ORDER_ID from VWE_S3.PUBLIC.ORDER_SNAP

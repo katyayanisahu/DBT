@@ -1,0 +1,23 @@
+version: 2
+models:
+  - name: CUSTOMER
+    columns: 
+      - name: CID
+        tests:
+          - unique
+          - not_null
+
+  - name: ORDER_SNAP
+    columns:
+      - name: ORDER_ID
+        tests:
+          - unique
+          - not_null
+      - name: status
+        tests:
+          - accepted_values:
+              values:
+                - delivered
+                - shipped
+                - processed
+                

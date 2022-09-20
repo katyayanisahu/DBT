@@ -1,4 +1,5 @@
 version: 2
+
 models:
   - name: CUSTOMER
     columns: 
@@ -9,7 +10,7 @@ models:
 
   - name: ORDER_SNAP
     columns:
-      - name: ORDER_ID
+      - name: ORDER_DATE
         tests:
           - unique
           - not_null
@@ -20,4 +21,4 @@ models:
                 - delivered
                 - shipped
                 - processed
-                
+       

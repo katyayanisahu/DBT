@@ -1,0 +1,13 @@
+version: 2
+
+models:
+
+  - name: ORDER_SNAP
+    columns:
+      - name: status
+        tests:
+          - accepted_values:
+              values:
+                - delivered
+                
+       

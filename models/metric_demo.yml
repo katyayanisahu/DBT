@@ -3,8 +3,7 @@
 version: 2
 
 models:
- - name: dim_customers
-   ...
+ - name: CUSTOMER
 
 metrics:
   - name: new_customers
@@ -16,8 +15,7 @@ metrics:
     sql: CID # superfluous here, but shown as an example
 
     timestamp: ORDERDATE
-    time_grains: [day, week, month]
-
+    
     dimensions:
       - CUSTOMER_NAME
     
